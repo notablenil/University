@@ -8,7 +8,7 @@ const buttonText = document.getElementById('buttonText');
 const page = document.getElementById('Page');
 id.value="5wzk7h";
 let url = 'https://proxy.corsfix.com/https://www.southampton.ac.uk/people/';
-const testurl = 'https://proxy.corsfix.com/https://www.southampton.ac.uk/people/5wk7h';
+const testurl = 'https://corsproxy.io/https://www.southampton.ac.uk/people/5wk7h';
 
 function grab(){
     try{
