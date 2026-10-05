@@ -7,12 +7,14 @@ const Button = document.getElementById('Button');
 const buttonText = document.getElementById('buttonText');
 const page = document.getElementById('Page');
 id.value="5wzk7h";
-let url = 'https://proxy.corsfix.com/https://www.southampton.ac.uk/people/';
-const testurl = 'https://corsproxy.io/https://www.southampton.ac.uk/people/5wk7h';
+let url = 'https://www.southampton.ac.uk/people/';
+const testurl = 'https://www.southampton.ac.uk/people/5wk7h';
 
 function grab(){
     try{
-        fetch(testurl)
+        //const useUrl = url+id.value;
+        const useUrl = testurl;
+        fetch(fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(useUrl)}`))
         .then((response) => response.json())
         .then((data) => console.log(data));
     } catch (e) {
